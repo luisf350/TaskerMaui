@@ -4,7 +4,7 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:converter="clr-namespace:TaskerMaui.Converters"
-    Title="MainView">
+    Title="Tasker">
 
     <ContentPage.Resources>
         <converter:ColorConverter x:Key="ColorConverter" />
@@ -67,5 +67,10 @@
                 </CollectionView.ItemTemplate>
             </CollectionView>
         </Grid>
+        <Button
+            Grid.Row="2"
+            Clicked="Button_Clicked"
+            Style="{StaticResource CircularButton}"
+            Text="+" />
     </Grid>
 </ContentPage>

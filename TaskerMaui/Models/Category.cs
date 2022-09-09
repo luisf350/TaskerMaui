@@ -9,5 +9,6 @@ namespace TaskerMaui.Models
         public string Color { get; set; }
         public int PendingTask { get; set; }
         public float Percentage { get; set; }
+        public bool IsSelected { get; set; }
     }
 }

@@ -1,5 +1,4 @@
-﻿using PropertyChanged;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using TaskerMaui.Models;
 
 namespace TaskerMaui.ViewModels
@@ -12,6 +11,12 @@ namespace TaskerMaui.ViewModels
         public MainViewModel()
         {
             FillData();
+            Tasks.CollectionChanged += Tasks_CollectionChanged;
+        }
+
+        private void Tasks_CollectionChanged(object sender, System.Collections.Specialized.NotifyCollectionChangedEventArgs e)
+        {
+            UpdateData();
         }
 
         private void FillData()
