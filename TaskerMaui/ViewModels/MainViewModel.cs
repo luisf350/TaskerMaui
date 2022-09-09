@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using PropertyChanged;
+using System.Collections.ObjectModel;
 using TaskerMaui.Models;
 
 namespace TaskerMaui.ViewModels
@@ -70,7 +71,7 @@ namespace TaskerMaui.ViewModels
             UpdateData();
         }
 
-        private void UpdateData()
+        public void UpdateData()
         {
             foreach (var c in Categories)
             {

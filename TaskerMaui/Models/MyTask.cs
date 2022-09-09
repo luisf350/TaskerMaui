@@ -1,6 +1,8 @@
-﻿namespace TaskerMaui.Models
+﻿using PropertyChanged;
+
+namespace TaskerMaui.Models
 {
-    public class MyTask
+    public class MyTask : BaseModel
     {
         public string Name { get; set; }
         public bool Completed { get; set; }
